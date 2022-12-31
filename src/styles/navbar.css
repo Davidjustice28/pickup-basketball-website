@@ -1,0 +1,96 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+    height: 10vh;
+    background-color: #FAF9F6;
+}
+
+#nav-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap:20px;
+    padding-right:0px;
+    position: relative;
+    right: 5%;
+    overflow: visible;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#site-name {
+    text-align: center;
+    font-style: italic;
+    width: 40%;
+    position: absolute;
+    left: 30%;
+}
+
+#navbar div {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    overflow: visible;
+}
+
+#nav-logo {
+    transform: scale(1.5);
+    overflow: visible;
+    position: relative;
+
+}
+
+#nav-menu li {
+    list-style-type: none;
+}
+
+#navbar a:visited {
+    color: black;
+}
+
+#nav-menu a:focus {
+    font-size: larger;
+    color: red;
+}
+
+#nav-logo:hover {
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-8px) scale(1.6);
+    }
+    25% {
+        transform: translateY(8px) scale(1.4);
+    }
+    50% {
+        transform: translateY(-8px) scale(1.6);
+    }
+    75% {
+        transform: translateY(8px)  scale(1.4);
+    }
+    100% {
+        transform: translateY(-8px) scale(1.6);
+    }
+}
+
+@media (max-width:600px) {
+    #nav-menu {
+        padding-right: 10%;
+    }
+
+    #site-name {
+        display: none;
+    }
+}
