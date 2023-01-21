@@ -45,6 +45,8 @@
     width: 100%;
     border: 2px solid black;
     position: absolute;
+    left:0px;
+    top:0px;
 }
 
 .league-header {

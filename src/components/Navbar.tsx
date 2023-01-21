@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import {Link} from "react-router-dom"
 import "../styles/navbar.css"
+import { LoggedIcon } from "./LoggedIcon";
 
 export const NavBar:FC = () => {
     return (
@@ -10,6 +11,7 @@ export const NavBar:FC = () => {
             <ul id="nav-menu">
                 <li><Link to="leagues">Leagues</Link></li>
                 <li><Link to="about">About Us</Link></li>
+                <Link to="dashboard"><LoggedIcon/></Link>
             </ul>
         </nav>
     )
