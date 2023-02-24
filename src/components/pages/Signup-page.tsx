@@ -1,6 +1,6 @@
 import React, {useEffect, useRef,useContext} from "react";
-import { LoggedContext } from "../App";
-import "../styles/signup-page.css"
+import { LoggedContext } from "../../App";
+import "../../styles/signup-page.css"
 
 export const SignupPage = (props:any) => {
     const [loggedIn,setLoggedIn] = useContext(LoggedContext) as [boolean,Function]
@@ -13,7 +13,7 @@ export const SignupPage = (props:any) => {
 
     function addUser(e:any) { 
         let hasUser = users.some((user:any) => {
-            return user.email == signupemail.current?.value
+            return user.email === signupemail.current?.value
         })
 
         if(!hasUser) {
@@ -34,10 +34,6 @@ export const SignupPage = (props:any) => {
             console.log("email already in use. try again.")
         }
     }
-
-    useEffect(() => {
-      console.log(users)
-    },[])
 
     useEffect(() => {
       console.log(currentUser)

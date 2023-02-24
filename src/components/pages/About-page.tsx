@@ -1,6 +1,6 @@
 import React from "react";
 import { FC } from "react";
-import "../styles/about-page.css"
+import "../../styles/about-page.css"
 
 export const AboutPage: FC = () => {
     return (

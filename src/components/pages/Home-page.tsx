@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import "../styles/home-page.css"
+import "../../styles/home-page.css"
 
 
 export const HomePage: FC = () => {
